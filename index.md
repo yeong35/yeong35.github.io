@@ -6,9 +6,13 @@ profile_picture:
 ---
 
 <p>
-  Welcome! This site serves as an example for the Bay Jekyll theme. Bay is a very simple and minimal theme, directly inspired by Dan Grover's <a href="http://dangrover.com">website</a>.
+  I am a researcher in <a href="https://www.keti.re.kr/eng/main/main.php">Korea Electronics Technology Institute</a>.
 </p>
 
 <p>
-  You can find the source code and the instructions on <a href="https://github.com/eliottvincent/bay">GitHub</a>.
+  My research interests are natural language processing (NLP) and personalized artificial intelligence (AI) education systems. I love to utilize AI for education.
+</p>
+
+<p>
+  If you feel free, you can reach out to me with my email and LinkedIn. 😉
 </p>
