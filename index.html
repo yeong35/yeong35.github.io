@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eunyoung Bang | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Google+Sans+Code:ital,wght@0,300..800;1,300..800&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>
+            Eunyoung Bang
+        </h1>
+        <div class="intro">
+            <p>
+                Eunyoung Bang
+                I am a Master’s student in Computer Science at the University of Massachusetts Amherst with strong
+                experience in data analysis, applied machine learning, and generative modeling. Through projects in
+                audio-based UAV monitoring and Transformer-based music generation, I have built end-to-end ML systems
+                grounded in rigorous data exploration, feature engineering, and statistical evaluation. I am passionate
+                about developing scalable, reliable, and user-centered software that transforms data into actionable
+                insights.
+            </p>
+        </div>
+
+        <div class="projects">
+            <div class="project-header">
+                <h2>UAV Velocity Prediction Using Audio data</h2>
+                <span class="tags">Audio ML · Python · CNN · MFCC · Librosa · Scikit-learn</span>
+            </div>
+            <p class="project-description">An audio-based ML system for UAV velocity prediction using acoustic features.
+                Trained CNN and traditional ML models with MFCC and Mel-spectrogram inputs on 2,357 samples (80/10/10
+                split), achieving 100% accuracy and F1-score. Published at IEEE IRC 2022.</p>
+            <img src="./images/UAVvelocity.png">
+        </div>
+        <div class="projects">
+            <div class="project-header">
+                <h2>Symbolic Music Generating Using Quasi-logarithmic Encoding</h2>
+                <span class="tags">GenAI · PyTorch · Data Analysis · MIDI</span>
+            </div>
+            <p class="project-description">Developed a Transformer-based symbolic music generation model using
+                quasi-logarithmic time encoding to address the long-sequence limitation of conventional MIDI-like
+                representations. The proposed encoding significantly reduced token length by up to 18%, compressing
+                sequences from over 22,000 tokens to approximately 20,000 tokens, while preserving musical structure and
+                quality.</p>
+            <img src="./images/logscale.png">
+        </div>
+        <div class="projects">
+            <div class="project-header">
+                <h2>A Symbolic Music Generation using Genre Information</h2>
+                <span class="tags">Music Generation · Python · Transformer · Embeddings · PyTorch</span>
+            </div>
+            <p class="project-description">Developed a conditional symbolic music generation system based on Transformer
+                models that incorporates genre information as control tokens. Designed a genre-aware encoding scheme and
+                trained the model on classical and pop music datasets to generate musically consistent compositions
+                across
+                multiple styles. Evaluated generation quality using statistical metrics, demonstrating improved
+                genre fidelity and structural coherence compared to baseline models.</p>
+            <img src="./images/COMT.png">
+        </div>
+    </div>
+</body>
+
+</html>
