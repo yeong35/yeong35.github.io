@@ -1,31 +1,43 @@
-body{
-    font-family: "Noto Serif", serif;
-    font-optical-sizing: auto;
-
-    background-color: #fff;
-    color: #1a1a1a;
-    line-height: 1.6;;
-
-    display: block;
+:root[color-theme='light'] {
+    --background: #fff;
+    --color: #1a1a1a;
+    --border: #ddd;
 }
 
-*{
+:root[color-theme='dark'] {
+    --background: #1a1a1a;
+    --color: #eee;
+    --border: #ddd;
+}
+
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-.container {
-    /* max-width: 1200px;
-    margin: 0 auto;
-    padding: 60px 20vw; */
+body {
+    font-family: "Noto Serif", serif;
+    font-optical-sizing: auto;
 
+    background-color: var(--background);
+    color: var(--color);
+    line-height: 1.6;
+
+    display: block;
+}
+
+.container {
     max-width: clamp(720px, 100vw, 1200px);
     margin: 0 auto;
     padding: 60px 15vw;
-    /* padding: 60px clamp(16px, 4vw, 48px); */
 }
 
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
 
 
 h1 {
@@ -35,7 +47,7 @@ h1 {
 }
 
 
-.intro{
+.intro {
     padding: 0 0 30px;
     border-bottom: 1px solid #ddd;
 }
@@ -52,19 +64,20 @@ p {
     flex-direction: column;
     gap: 15px;
 }
-.project-header{
+
+.project-header {
     display: flex;
     flex-direction: column;
     align-items: left;
 }
 
-h2{
+h2 {
     font-size: 1.1rem;
-    display:block;
+    display: block;
     unicode-bidi: isolate;
 }
 
-.tags{
+.tags {
     font-size: 0.8rem;
     color: #999;
     font-style: italic;
@@ -79,15 +92,29 @@ img {
     justify-content: center;
 }
 
+.icon-toggle {
+    background: none;
+    border: none;
+    color: var(--color);
+    font-size: 22px;
+    cursor: pointer;
+    padding: 6px;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
 
-@media (max-width: 480px){
-    .container{
+.icon-toggle:hover {
+    transform: scale(1.15);
+    opacity: 0.8;
+}
+
+@media (max-width: 480px) {
+    .container {
         padding: 30px 16px;
     }
 }
 
-@media (max-width: 768px){
-    .container{
+@media (max-width: 768px) {
+    .container {
         padding: 40px 20px;
     }
 }
